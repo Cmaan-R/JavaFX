@@ -22,7 +22,7 @@ public class Contador extends Application{
 		if(contador >= 0 ) {
 			label.getStyleClass().add("verde");
 		} else {
-			label.getStyleClass().add("vermelho"); //TesteGit
+			label.getStyleClass().add("vermelho");
 		}
 	}
 	

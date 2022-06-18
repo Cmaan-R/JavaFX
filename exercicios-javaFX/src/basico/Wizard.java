@@ -19,25 +19,71 @@ public class Wizard extends Application{
 		janela = primaryStage;
 		
 		criarPasso1();
+		criarPasso2();
+		criarPasso3();
+		
 
-		primaryStage.setScene(passo1);
-		primaryStage.setTitle("Wizard");
-		primaryStage.show();
+		janela.setScene(passo1);
+		janela.setTitle("Wizard");
+		janela.show();
 		
 	}
 	
 	private void criarPasso1 () {
 		Button proximoPasso = new Button("Ir para Passo 2 >>");
-		
-		
-		
+		proximoPasso.setOnAction(e -> {
+			janela.setScene(passo2);
+		});
 		HBox box = new HBox();
 		box.setAlignment(Pos.CENTER);
 		box.getChildren().add(proximoPasso);
 		
 		passo1 = new Scene(box, 400 , 400);
+	}
+		
+	private void criarPasso2 () {
+		
+		Button passoAnterior = new Button("<< Ir para Passo 1");
+		passoAnterior.setOnAction(e -> {
+			janela.setScene(passo1);
+		});
+		
+		Button proximoPasso = new Button("Ir para Passo 3 >>");
+		proximoPasso.setOnAction(e -> {
+			janela.setScene(passo3);
+		});
+		
+		
+		HBox box = new HBox();
+		box.setAlignment(Pos.CENTER);
+		box.getChildren().add(passoAnterior);
+		box.getChildren().add(proximoPasso);
+		
+		passo2 = new Scene(box, 400 , 400);
 		
 	}
+	private void criarPasso3 () {
+		
+		Button passoAnterior = new Button("<< Ir para Passo 2");
+		passoAnterior.setOnAction(e -> {
+			janela.setScene(passo2);
+		});
+		
+		Button proximoPasso = new Button("Fim da Aplicação!!!");
+		passoAnterior.setOnAction(e -> {
+			System.out.println("Final!!!");
+		});
+		
+		
+		HBox box = new HBox();
+		box.setAlignment(Pos.CENTER);
+		box.getChildren().add(passoAnterior);
+		box.getChildren().add(proximoPasso);
+		
+		passo3 = new Scene(box, 400 , 400);
+		
+	}
+		
 	
 	public static void main(String[] args) {
 		launch(args);

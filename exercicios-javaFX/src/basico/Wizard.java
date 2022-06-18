@@ -24,7 +24,7 @@ public class Wizard extends Application{
 		
 
 		janela.setScene(passo1);
-		janela.setTitle("Wizard");
+		janela.setTitle("Wizard :: Passo 1");
 		janela.show();
 		
 	}
@@ -33,6 +33,7 @@ public class Wizard extends Application{
 		Button proximoPasso = new Button("Ir para Passo 2 >>");
 		proximoPasso.setOnAction(e -> {
 			janela.setScene(passo2);
+			janela.setTitle("Wizard :: Passo 2");
 		});
 		HBox box = new HBox();
 		box.setAlignment(Pos.CENTER);
@@ -46,11 +47,13 @@ public class Wizard extends Application{
 		Button passoAnterior = new Button("<< Ir para Passo 1");
 		passoAnterior.setOnAction(e -> {
 			janela.setScene(passo1);
+			janela.setTitle("Wizard :: Passo 1");
 		});
 		
 		Button proximoPasso = new Button("Ir para Passo 3 >>");
 		proximoPasso.setOnAction(e -> {
 			janela.setScene(passo3);
+			janela.setTitle("Wizard :: Passo 3");
 		});
 		
 		

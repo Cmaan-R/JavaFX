@@ -69,7 +69,11 @@ public class Wizard extends Application{
 			janela.setScene(passo2);
 		});
 		
-		Button proximoPasso = new Button("Fim da Aplicação!!!");
+		
+		Button proximoPasso = new Button("Finalizar");
+		proximoPasso.setOnAction(e -> {
+			System.exit(0);
+		});
 		
 		
 		HBox box = new HBox();

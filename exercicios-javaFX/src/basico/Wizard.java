@@ -70,9 +70,6 @@ public class Wizard extends Application{
 		});
 		
 		Button proximoPasso = new Button("Fim da Aplicação!!!");
-		passoAnterior.setOnAction(e -> {
-			System.out.println("Final!!!");
-		});
 		
 		
 		HBox box = new HBox();

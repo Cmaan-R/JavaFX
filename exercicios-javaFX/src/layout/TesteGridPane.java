@@ -19,6 +19,14 @@ public class TesteGridPane extends GridPane {
 		
 		getColumnConstraints().addAll(cc(), cc() , cc() , cc(), cc() , cc());
 		getRowConstraints().addAll(rc(), rc(), rc(), rc(), rc(), rc());
+		
+		add(c1, 0, 0, 2 , 2);
+		add(c2, 1, 1 ,2 , 2);
+		add(c3, 4, 2 ,1 , 3);
+		add(c4, 3, 1);
+		add(c5, 0, 4, 2 , 1);
+		add(c6, 3, 3);
+		
 	}
 	
 	private ColumnConstraints cc() {

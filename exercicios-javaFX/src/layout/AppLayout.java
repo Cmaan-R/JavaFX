@@ -1,13 +1,16 @@
 package layout;
 
 import javafx.application.Application;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class AppLayout extends Application{
 	
+	public void start(Stage primaryStage) throws Exception {	
+	
+		Scene principal = new Scene(new TesteAnchorPane(), 800 , 600);
 
-	public void start(Stage primaryStage) throws Exception {
-
+		primaryStage.setScene(principal);
 		primaryStage.setTitle("Gerenciadores de Layout");
 		primaryStage.show();
 		

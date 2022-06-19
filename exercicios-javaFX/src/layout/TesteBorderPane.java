@@ -20,7 +20,5 @@ public class TesteBorderPane extends BorderPane{
 		
 		Caixa c5 = new Caixa().comTexto("Área Central");
 		setCenter(c5);
-		
 	}
-
 }

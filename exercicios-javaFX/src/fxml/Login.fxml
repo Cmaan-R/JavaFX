@@ -33,7 +33,7 @@
 
 	<Button text="Entrar"
 	
-		styleClass="login-form-label"	
+		styleClass="login-form-botao"	
 		GridPane.columnIndex="0" GridPane.rowIndex="3"
 		onAction="#entrar">
 	</Button>

@@ -36,9 +36,7 @@ public class LoginControlador {
 			System.out.println("Falha");
 		}
 		
-		
 		System.out.println(campoEmail.getText());
 		System.out.println(campoSenha.getText());
 	}
-
 }
